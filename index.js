@@ -1,45 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import { createStore } from 'vuex'
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-    iconClass: 'fas fa-home',
-    mainMenu: true
+export default createStore({
+  state: {
   },
-  {
-    path: '/explore',
-    name: 'Explore',
-    component: Home,
-    iconClass: 'fas fa-search',
-    mainMenu: true
+  mutations: {
   },
-  {
-    path: '/notifications',
-    name: 'Notifications',
-    component: Home,
-    iconClass: 'fas fa-bell',
-    mainMenu: true
+  actions: {
   },
-  {
-    path: '/messages',
-    name: 'Messages',
-    component: Home,
-    iconClass: 'fas fa-envelope',
-    mainMenu: true
-  },
-  {
-    path: '/profile',
-    name: 'Profile',
-    component: Home
+  modules: {
   }
-]
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
 })
-
-export default router
